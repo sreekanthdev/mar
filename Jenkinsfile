@@ -17,19 +17,5 @@ stages
       git 'mvn package'
     }
   }
-  stage("ContinuousDownload")
-  {
-    steps
-    {
-      
-    }
-  }
-  stage("ContinuousDownload")
-  {
-    steps
-    {
-      
-    }
-  }
 }
 }
