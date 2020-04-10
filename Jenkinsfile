@@ -33,5 +33,16 @@ stages
       echo "Testing pass"
     }
   }
+  post
+  {
+    success
+    {
+            sh 'scp /home/ubuntu/.jenkins/workspace/dpipeline/webapp/target/webapp.war ubuntu@172.31.33.83:/var/lib/tomcat8/webapps/prodenv6.war'
+    }
+    failure
+    {
+      mail bcc: '', body: 'this build is failed with technical issues', cc: '', from: '', replyTo: '', subject: 'Build', to: 'sreekanthbujji24@gmail.com'
+    }
+  }
 }
 }
