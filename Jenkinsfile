@@ -17,19 +17,5 @@ stages
       sh 'mvn package'
     }
   }
-  stage("ContinuousDeployment")
-  {
-    steps
-    {
-      
-    }
-  }
-  stage("ContinuousTesting")
-  {
-    steps
-    {
-      
-    }
-  }
 }
 }
