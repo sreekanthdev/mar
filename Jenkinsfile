@@ -29,7 +29,7 @@ stages
   {
     steps
     {
-      git 'https:///selenium-saikrishna/FunctionalTesting.git'
+      git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
       echo "Testing pass"
     }
   }
