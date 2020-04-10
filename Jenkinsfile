@@ -33,6 +33,7 @@ stages
       echo "Testing pass"
     }
   }
+}
   post
   {
     success
@@ -44,5 +45,4 @@ stages
       mail bcc: '', body: 'this build is failed with technical issues', cc: '', from: '', replyTo: '', subject: 'Build', to: 'sreekanthbujji24@gmail.com'
     }
   }
-}
 }
