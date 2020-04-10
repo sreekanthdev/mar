@@ -14,7 +14,21 @@ stages
   {
     steps
     {
-      git 'mvn package'
+      sh 'mvn package'
+    }
+  }
+  stage("ContinuousDeployment")
+  {
+    steps
+    {
+      
+    }
+  }
+  stage("ContinuousTesting")
+  {
+    steps
+    {
+      
     }
   }
 }
